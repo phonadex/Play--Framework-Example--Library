@@ -10,4 +10,9 @@ public class BasicTest extends UnitTest {
         assertEquals(2, 1 + 1);
     }
 
+    @Test
+    public void constructorTest() {
+	Application a = new Application();
+        assertNotNull(a);
+    }
 }
