@@ -1,6 +1,7 @@
 import org.junit.*;
 import java.util.*;
 import play.test.*;
+import controllers.*;
 import models.*;
 
 public class BasicTest extends UnitTest {
