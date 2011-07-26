@@ -26,4 +26,4 @@ AUX_CLASSPATH=$AUX_CLASSPATH:$PLAY_PATH/framework/lib/jj-wikitext.jar
 #AUX_CLASSPATH=$AUX_CLASSPATH:$PLAY_PATH/framework/lib/
 
 #echo AUX_CLASSPATH=$AUX_CLASSPATH
-/Users/jeff/third/findbugs-1.3.9/bin/findbugs -xml -textui -auxclasspath $AUX_CLASSPATH ./precompiled/java/ > test-result/findbugs.xml
+/opt/findbugs/bin/findbugs -xml -textui -auxclasspath $AUX_CLASSPATH ./precompiled/java/ > test-result/findbugs.xml
