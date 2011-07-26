@@ -5,5 +5,6 @@ eclipse
 tmp
 logs
 test-result
+cobertura.ser
 *~
 
