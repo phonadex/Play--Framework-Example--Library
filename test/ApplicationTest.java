@@ -13,6 +13,14 @@ public class ApplicationTest extends FunctionalTest {
         assertContentType("text/html", response);
         assertCharset("utf-8", response);
     }
+
+    @Test
+    public void testThatIndex2PageWorks() {
+        Response response = GET("/Application/index2");
+        assertIsOk(response);
+        assertContentType("text/html", response);
+        assertCharset("utf-8", response);
+    }
     
     @Test
     public void testBorrowBook() {

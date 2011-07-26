@@ -1,0 +1,46 @@
+#{extends 'main.html' /}
+#{set title:'Library' /}
+<div id="header">
+  <h1>Our Library</h1>
+</div>
+<div id="main">
+  #{if flash.success}
+    <p class="success">${flash.success}</p>
+  #{/if}
+  <table id="books">
+    <thead>
+      <tr>
+        <th>
+          Title
+        </th>
+        <th>
+          Author
+        </th>
+        <th>
+          Status
+        </th>
+        <th>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      #{list items:books, as:'book' }
+      <tr>
+        <td>
+          ${book.title}
+        </td>
+        <td>
+          ${book.author}
+        </td>
+        <td>
+          ${book.isCheckedOut ? 'Checked Out' : 'Available'}
+        </td>
+        <td>
+          #{if !book.isCheckedOut} 
+            #{form @Application.borrowBook(book.id)}<input type="submit" value="Borrow" />#{/form}
+          #{/if}
+        </td>
+      </tr>#{/list}
+    </tbody>
+  </table>
+</div>

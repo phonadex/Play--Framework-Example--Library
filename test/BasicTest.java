@@ -15,5 +15,6 @@ public class BasicTest extends UnitTest {
     public void constructorTest() {
 	Application a = new Application();
         assertNotNull(a);
+//	Application.index();
     }
 }

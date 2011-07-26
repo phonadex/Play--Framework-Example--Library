@@ -9,6 +9,10 @@ import models.*;
 
 public class Application extends Controller {
 
+    public static void index2() {
+        render();
+    }
+    
     public static void index() {
         List<Book> books = Book.findAll();
         render(books);
