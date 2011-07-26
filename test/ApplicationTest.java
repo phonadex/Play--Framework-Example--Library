@@ -14,4 +14,13 @@ public class ApplicationTest extends FunctionalTest {
         assertCharset("utf-8", response);
     }
     
+    @Test
+    public void testBorrowBook() {
+        Response response = GET("/Application/borrowBook?bookId=1");
+        assertNotNull(response);
+        //assertIsOk(response);
+        //assertContentType("text/html", response);
+        //assertCharset("utf-8", response);
+    }
+    
 }
