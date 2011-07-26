@@ -4,7 +4,7 @@ import play.test.*;
 import controllers.*;
 import models.*;
 
-public class Derrell extends UnitTest {
+public class DerrellTest extends UnitTest {
 
     @Test
     public void constructorTest() {
